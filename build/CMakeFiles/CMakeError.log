@@ -1,0 +1,21 @@
+Performing C++ SOURCE FILE Test HAVE_FFMPEG_MAX_ANALYZE_DURATION2 failed with the following output:
+Change Dir: /home/alexchiluisac/PycharmProjects/P4-Visio/pangolin/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6d4b9/fast && /usr/bin/make -f CMakeFiles/cmTC_6d4b9.dir/build.make CMakeFiles/cmTC_6d4b9.dir/build
+make[1]: Entering directory '/home/alexchiluisac/PycharmProjects/P4-Visio/pangolin/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6d4b9.dir/src.cxx.o
+/usr/bin/c++    -std=c++14 -Wall -Wextra  -fPIC -DHAVE_FFMPEG_MAX_ANALYZE_DURATION2   -o CMakeFiles/cmTC_6d4b9.dir/src.cxx.o -c /home/alexchiluisac/PycharmProjects/P4-Visio/pangolin/build/CMakeFiles/CMakeTmp/src.cxx
+/home/alexchiluisac/PycharmProjects/P4-Visio/pangolin/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/alexchiluisac/PycharmProjects/P4-Visio/pangolin/build/CMakeFiles/CMakeTmp/src.cxx:3:33: error: ‘max_analyze_duration2’ is not a member of ‘AVFormatContext’
+    3 |         sizeof(AVFormatContext::max_analyze_duration2);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [CMakeFiles/cmTC_6d4b9.dir/build.make:66: CMakeFiles/cmTC_6d4b9.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/alexchiluisac/PycharmProjects/P4-Visio/pangolin/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_6d4b9/fast] Error 2
+
+
+Source file was:
+#include "/usr/include/x86_64-linux-gnu/libavformat/avformat.h"
+      int main() {
+        sizeof(AVFormatContext::max_analyze_duration2);
+      }
